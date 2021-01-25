@@ -20,8 +20,8 @@ def update_request(x):
     return result
 
 
-data = pd.read_csv(filepath_or_buffer='energy-test.csv',
+data = pd.read_csv(filepath_or_buffer='../datasets/energy-test.csv',
                    names=['Date', 'TZ', 'City', 'Code', 'Load'])
 predicted = data.apply(lambda x: update_request(x), axis=1)
 data2 = pd.concat([data, predicted], axis=1)
-data2.to_csv(path_or_buf='energy-pred.csv', index=False)
+data2.to_csv(path_or_buf='../datasets/energy-pred.csv', index=False)

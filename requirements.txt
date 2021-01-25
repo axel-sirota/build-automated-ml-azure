@@ -1,0 +1,11 @@
+pandas
+requests
+numpy
+jupyter
+sklearn
+azureml
+matplotlib
+azureml-core
+azureml-train-automl
+azureml-explain-model
+azureml-interpret
